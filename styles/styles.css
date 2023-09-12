@@ -3,31 +3,62 @@
 body {
     background-color:#444a47;
 }
+#footer {
+  position:fixed;
+  left:0px;
+  bottom:0px;
+  height:30px;
+  width:100%;
+  background:#ff6347;
+}
+#links{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-size-adjust: calc(1);
+  border-collapse: collapse;
+  width: 100%;
+}
+#links td, #customers th {
+  border: 3px solid #ddd;
+  text-align:center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+#links tr:nth-child(even){background-color: #313131;}
+#links tr:hover {background-color: #727571;}
+#links th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04AA6D;
+  color: white;
+}
+
 p {
-    background-color:#ff6347;
+    background:#ff6347;
     border: 2px solid powderblue;
     margin: 50px;
 }
 a:link {
-    color: pink;
+    color: lightgreen;
     background-color: transparent;
     text-decoration: none;
   }
   
   a:visited {
-    color: pink;
+    color: lightgreen;
     background-color: transparent;
     text-decoration: none;
   }
   
   a:hover {
-    color: pink;
+    color: whitesmoke;
     background-color: transparent;
     text-decoration: underline;
   }
   
   a:active {
-    color: pink;
+    color: greenyellow;
     background-color: transparent;
     text-decoration: none;
   }
@@ -38,13 +69,31 @@ a:link {
   /* Alignment */
   .center {
     margin: auto;
-    width: 50%;
+    width: 100%;
   }
+  .revealOnHover{
+    visibility:visible;
+    z-index: -100;
+  }
+  .revealOnHover:hover{
+    visibility: visible;
+    z-index: 100;
+  }
+  .hideOnHover{
+    visibility: inherit;
+    z-index: inherit;
+  }
+  .hideOnHover:hover{
+    visibility: hidden;
+    z-index: -100;
+  }
+
+
 
   /* Things to apply to text */
   .stroke
   {
-    color: white;
+    color: whitesmoke;
     text-shadow:
     -2px -2px 0 #000,
     2px -2px 0 #000,
@@ -53,7 +102,7 @@ a:link {
 }
   .strokeThin
   {
-      color: white;
+      color: whitesmoke;
       text-shadow:
       -1px -1px 0 #000,
       1px -1px 0 #000,
@@ -62,16 +111,21 @@ a:link {
   }
   .weirdText
   {
-    color: white;
+    color: whiteSmoke;
     text-shadow:
-    -2px -10px 0 #000,
-    2px -3px 0 #000,
-    -3px 10px 0 #000,
-    2px 5px 0 #000;  
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000,  
+    -2px -4px 0 #188d00,
+    2px -3px 0 #c50b0b,
+    -3px 4px 0 #351e9b,
+    2px 5px 0 #7a1569;
+     
 }
 .shadowFar
   {
-    color: white;
+    color: whiteSmoke;
     text-shadow:
     100px -15px 0 #000,
     0px -5px 0 #000,
