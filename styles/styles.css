@@ -16,7 +16,7 @@ body {
   font-size: small;
   font-size-adjust: calc(1);
   border-collapse: collapse;
-  width: 100%;
+  width: 35%;
 }
 #links td, #customers th {
   border: 3px solid #ddd;
@@ -27,9 +27,9 @@ body {
 #links tr:nth-child(even){background-color: #313131;}
 #links tr:hover {background-color: #727571;}
 #links th {
-  padding-top: 12px;
+  padding-top: 12rcap;
   padding-bottom: 12px;
-  text-align: left;
+  text-align: center;
   background-color: #04AA6D;
   color: white;
 }
