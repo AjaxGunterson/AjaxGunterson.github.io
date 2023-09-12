@@ -14,7 +14,8 @@ html, body {
   width: calc(100% - .6rem);
   border: .3rem solid #b1b8af;
   text-align:center;
-  height: 1.5rem;
+  font-size: 1.2rem;
+  height: 2rem;
   padding-top: .5rem;
   padding-bottom: .5rem;
   color:whitesmoke;
@@ -27,8 +28,10 @@ html, body {
   left:0px;
   top: 0px;
   width:calc(100% - .6rem);
+  height: 2rem;
   border: .3rem solid #b1b8af;
   text-align:center;
+  font-size: 1.5rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
   color:whitesmoke;
