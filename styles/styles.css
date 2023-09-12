@@ -1,69 +1,75 @@
 /* Universal static cosmetic changes */
 
-body {
-    background-color:#444a47;
+html, body {
+  margin: 0;
+  background-color:#444a47;
+  height: calc(100% - 1.5rem - .3rem);
 }
+
+/*Footer*/
 #footer {
-  position:fixed;
-  left:0px;
-  bottom:0px;
-  height:30px;
-  width:100%;
+  position:absolute;
+  left: 0px;
+  bottom: 0px;
+  width: calc(100% - .6rem);
+  border: .3rem solid #b1b8af;
+  text-align:center;
+  height: 1.5rem;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  color:whitesmoke;
   background:#ff6347;
 }
+
+/*Header*/
+#header {
+  position:absolute;
+  left:0px;
+  top: 0px;
+  width:calc(100% - .6rem);
+  border: .3rem solid #b1b8af;
+  text-align:center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  color:whitesmoke;
+  background:#ff6347;
+}
+
+/*Links panel*/
 #links{
   font-family: Arial, Helvetica, sans-serif;
-  font-size: small;
-  font-size-adjust: calc(1);
+  font-size: 2rem;
   border-collapse: collapse;
-  width: 100%;
+  width: 30%;
 }
-#links td, #customers th {
-  border: 3px solid #ddd;
+#links td, #links th {
+  border: 0.3rem solid #b1b8af;
   text-align:center;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 #links tr:nth-child(even){background-color: #313131;}
 #links tr:hover {background-color: #727571;}
 #links th {
-  padding-top: 12px;
-  padding-bottom: 12px;
-  text-align: left;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  text-align: center;
   background-color: #04AA6D;
   color: white;
 }
-
-p {
-    background:#ff6347;
-    border: 2px solid powderblue;
-    margin: 50px;
+#links a:link, a:visited, a:active {
+  color: lightgreen;
+  background-color: transparent;
+  text-decoration: none;
 }
-a:link {
-    color: lightgreen;
-    background-color: transparent;
-    text-decoration: none;
-  }
-  
-  a:visited {
-    color: lightgreen;
-    background-color: transparent;
-    text-decoration: none;
-  }
-  
-  a:hover {
-    color: whitesmoke;
-    background-color: transparent;
-    text-decoration: underline;
-  }
-  
-  a:active {
-    color: greenyellow;
-    background-color: transparent;
-    text-decoration: none;
-  }
+#links a:hover {
+  color: whitesmoke;
+  background-color: transparent;
+  text-decoration: none;
+}
+
   table, th, td {
-    border:1px solid black;
+    border:0.2rem solid black;
   }
 
   /* Alignment */
@@ -77,7 +83,7 @@ a:link {
   }
   .revealOnHover:hover{
     visibility: visible;
-    z-index: 100;
+    z-index: 1000;
   }
   .hideOnHover{
     visibility: inherit;
@@ -85,7 +91,7 @@ a:link {
   }
   .hideOnHover:hover{
     visibility: hidden;
-    z-index: -100;
+    z-index: -1000;
   }
 
 
